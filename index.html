@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ | Technical | Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav id="navbar">
+        <header>C++ Documentation</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#C_and_Cpp" class="nav-link">C and Cpp</a></li>
+            <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Declaring_Variable" class="nav-link">Declaring Variable</a></li>
+            <li><a href="#Operators" class="nav-link">Operators</a></li>
+            <li><a href="#Constants" class="nav-link">Constants</a></li>
+            <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+            <li><a href="#Conditional_Statement" class="nav-link">Conditional Statement</a></li>
+            <li><a href="#Loops" class="nav-link">Loops</a></li>
+            <li><a href="#Functions" class="nav-link">Functions</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+
+
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>C++ is a cross-platform language that can be used to create high-performance applications.</p>
+                <p>C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
+                <p>C++ gives programmers a high level of control over system resources and memory.</p>
+                <p>The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.
+                </p>
+                <ul>
+                    <li>C++ is one of the world's most popular programming languages.</li>
+                    <li>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+                    </li>
+                    <li>C++ is fun and easy to learn!</li>
+
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="C_and_Cpp">
+            <header>C and Cpp</header>
+            <article>
+                <h4>What is C ?</h4>
+                <p>C is a structural or procedural programming language that was developed by Computer Scientist Dennis
+                    Ritchie in 1972 at Bell Laboratories. C is a basic programming language that can be used to develop
+                    an operating system such as Windows, Apple OS X to complex programs like Oracle Database, MySQL,
+                    Adobe, Python interpreter, Git, etc. Being procedural language C does not support Objects or
+                    Classes.</p>
+
+                <h4>What is C++ ?</h4>
+                <p>C++ was also known as “C with Classes,” which is a general-purpose, object-oriented programming
+                    language. Bjarne Stroustrup developed this language in 1979. It is a multi-paradigm programming
+                    language as it supports both procedural and object-oriented programming languages. C++ has the
+                    property of the C programming language along with the classes and objects for user-defined data
+                    types. C++ is used with graphics applications, operating systems, smartwatches, game development,
+                    cloud distributed system, compilers, etc.</p>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <article>
+                <p>The basic syntax of C++ is very simple. A statement is a unit of code terminated by a semicolon.</p>
+                <code>
+                            #include <iostream> <br>
+                                using namespace std; <br>
+                                <br>
+                                int main() { <br>
+                                  cout << "Hello World!"; <br>
+                                  return 0;
+                                }
+                           
+                        </code>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Variables play a significant role in constructing a program, storing values in memory and dealing
+                    with them. Variables are required in various functions of every program. Variables are used in
+                    C++ where you will need to store any type of values within a program and whose value can be
+                    changed during the program execution.</p>
+
+                <ol>The general rules for naming variables are:
+                    <li>Names can contain letters, digits and underscores</li>
+                    <li>Names must begin with a letter or an underscore (_)</li>
+                    <li>Names are case sensitive (myVar and myvar are different variables)</li>
+                    <li>Names cannot contain whitespaces or special characters like !, #, %, etc</li>
+                    <li>Reserved words (like C++ keywords, such as int) cannot be used as names
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="Declaring_Variable">
+            <header>Declaring Variable</header>
+            <article>
+                <p>Variables are containers for storing data values.</p>
+                <p>C++ is a strongly-typed language, and requires every variable to be declared with its type before its
+                    first use. This informs the compiler the size to reserve in memory for the variable and how to
+                    interpret its value. The syntax to declare a new variable in C++ is straightforward: we simply write
+                    the type followed by the variable name (i.e., its identifier). For example:</p>
+                <p>If declaring more than one variable of the same type, they can all be declared in a single statement
+                    by separating their identifiers with commas. For example:</p>
+                <code>int a = 2, b, c;<br>
+                            cout << a;                 
+        
+                        </code>
+
+                <p><strong>output : </strong>2</p>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <article>
+                <p>An operator is a symbol that tells the compiler to perform specific mathematical
+                    or logical manipulations. Some major type of operators are listed below:</p>
+                <ul>
+                    <li>Arithmetic Operators
+                        <code>int x = 100 + 50;</code>
+                    </li>
+                    <li>Logical Operators
+                        <code>
+
+                                        int x = 5;<br>
+                                        int y = 3;<br>
+                                        cout << (x > 3 && x < 10);
+                                        
+                                    </code>
+                    </li>
+                    <li>Relational Operators
+                        <code>
+                                    int x = 5;<br>
+                                    int y = 3;<br>
+                                    cout << (x > y);
+                                    </code>
+                    </li>
+                    <li>Assignment Operators Operators
+                        <code>
+                                        int x = 10;<br>
+        x += 5;
+                                    </code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <article>
+                <p>This section will discuss the const keyword in the C++ programming language. It is the const keywords
+                    used to define the constant value that cannot change during program execution. It means once we
+                    declare a variable as the constant in a program, the variable's value will be fixed and never be
+                    changed. If we try to change the value of the const type variable, it shows an error message in the
+                    program.</p>
+                <p>In C++, we can create variables whose value cannot be changed. For that, we use the const keyword.
+                    Here's an example:</p>
+                <code>
+                            const int num = 25;<br>
+                            cout << num;
+                        </code>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <p>In <strong class="inline">C++,</strong> there are different types of variables (defined with
+                    different keywords), for example:</p><br>
+
+                <p><strong>int</strong>- stores integers (whole numbers), without decimals, such as 123 or -123</p>
+                <p><strong>float</strong> - stores floating point numbers, with decimals, such as 19.99 or -19.99</p>
+                <p><strong>string</strong> - stores text, such as "Hello World". String values are surrounded by double
+                    quotes</p>
+                <p><strong>char</strong>- stores single characters, such as 'a' or 'B'. Char values are surrounded by
+                    single quotes</p>
+                <p><strong>bool</strong>- stores values with two states: true or false</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Conditional_Statement">
+            <header>Conditional Statement</header>
+            <article>
+                <p>You can use these conditions to perform different actions for different decisions.</p>
+                <p>C++ has the following conditional statements:</p>
+                <ul>
+                    <li>Use <span class="cond">if</span> to specify a block of code to be executed, if a specified
+                        condition is true
+                        <code>
+                                    <pre>
+                if (20 > 18) {
+                cout << "20 is greater than 18";
+                } 
+                                    </pre>
+                                </code>
+                    </li>
+                    <li>Use <span class="cond">else</span> to specify a block of code to be executed, if the same
+                        condition is false
+                        <code>
+                                    <pre>
+                if (20 > 18) {
+                cout << "20 is greater than 18";
+                } else{
+                    cout << "20 is less than 18";
+                }
+                                    </pre>
+                                </code>
+                    </li>
+                    <li>Use <span class="cond">else if</span> to specify a new condition to test, if the first condition
+                        is false
+                        <code>
+                                    <pre>
+                if (20 > 18) {
+                cout << "20 is greater than 18";
+        
+                }else if(20 < 18){
+                    cout << "20 is less than 18";
+                }
+                                    </pre>
+                                </code>
+                    </li>
+                    <li>Use <span class="cond">switch</span> to specify many alternative blocks of code to be executed
+                        <code>
+                                <pre>
+                int day = 4;
+                switch (day) {
+                    case 1:
+                    cout << "Monday";
+                    break;
+                    case 2:
+                    cout << "Tuesday";
+                    break;
+                }
+                             </pre>
+                            </code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+            <article>
+                <p>There may be a situation, when you need to execute a block of code several number of times. In
+                    general, statements are executed sequentially: The first statement in a function is executed first,
+                    followed by the second, and so on.</p>
+                <p>A loop statement allows us to execute a statement or group of statements multiple times and following
+                    is the general from of a loop statement in most of the programming languages</p>
+
+                <ul>
+                    <li><strong class="loops">For loop</strong>
+                        <code>for (int i = 0; i < 5; i++) {<br>
+                                    cout << i << "\n"; <br>
+                                  }</code>
+                    </li>
+                    <li><strong class="loops">while loop</strong>
+                        <code>int i = 0;<br>
+                                    while (i < 5) { <br>
+                                      cout << i << "\n"; br
+                                      i++;
+                                    }</code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>A function is a block of code which only runs when it is called.
+                    You can pass data, known as parameters, into a function.
+                    Functions are used to perform certain actions, and they are important for reusing code: Define the
+                    code once, and use it many times.</p>
+
+                <h4>creating a function</h4>
+                <p>C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can
+                    also create your own functions to perform certain actions.
+                    To create (often referred to as declare) a function, specify the name of the function, followed by
+                    parentheses ():</p>
+                <code>
+                                void myFunction() {<br>
+                                    // code to be executed <br>
+                                  }
+                            </code>
+
+                <h4>calling a function</h4>
+
+                <p>Declared functions are not executed immediately. They are "saved for later use", and will be executed
+                    later, when they are called.To call a function, write the function's name followed by two
+                    parentheses () and a semicolon ;<br>
+                    In the following example, myFunction() is used to print a text (the action), when it is called:</p>
+
+                <code>
+                                    // Create a function
+        void myFunction() { <br>
+          cout << "I just got executed!"; <br>
+        }
+        <br><br>
+        int main() { <br>
+          myFunction(); // call the function <br>
+          return 0;
+        }
+                                </code>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>All the documentation in this page is taken from <a
+                            href="https://www.w3schools.com/">W3School</a> </li>
+                </ul>
+            </article>
+        </section>
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>
